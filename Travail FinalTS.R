@@ -1,5 +1,4 @@
 
-setwd("/Users/juliopastor/OneDrive - UPV/UCL/Time Series/Group 14-20200415");
 #Load the required packages:
 require(forecast)
 library(tibbletime)
@@ -11,7 +10,7 @@ library(rugarch)
 library(tseries)
 library(fBasics)
 require(aTSA)
-source('/Users/juliopastor/OneDrive - UPV/UCL/Time Series/FonctionsSeriesChrono.r') ## needs to be in the working directory
+source(cd) ## needs to be in the working directory
 #We create the time series 
 Stock <- ts(read.table('dell.txt', header = F)$V1); ## or "import Dataset" in Rstudio
 basicStats(Stock)# We obtain an aproximation of the mean and the variance
